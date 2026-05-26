@@ -190,6 +190,8 @@ You recover stamina equal to your recovery value each period of time spent perfo
 | Short     | 1 hour         | Strain         |
 | Medium    | 1 week         | Major          |
 | Long      | 1 month        | Critical       |
+## Initiative
+Monsters act in groups where one group is approximately equivalent in power to one player. One player rolls a d20, on a roll of 10 or less the players go first, otherwise the monsters do. They then take it in turns until all groups of both sides have had a turn. 
 # Skill List
 EoS uses a different skill list to DnD. For each proficiency (skill or tool) you gain a 1 skill point and for each expertise you gain 3. You must spend skill points equal to the rank you wish to increase it to increase the rank of a skill. No skills can have a rank higher than your PB minus 1. 
 ### Crafting Skills
