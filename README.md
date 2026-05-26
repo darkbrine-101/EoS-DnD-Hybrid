@@ -10,7 +10,7 @@ Your characteristics are changed in name, but their purpose remains fairly simil
 
 Additionally, they are mapped to a value between 0 and 200, with humans averaging around 100 in everything, with a deviation of 10.
 ### Determining Characteristics
-You start level 1 with 120 points and 80 in each characteristic. You can spend 1 point to increase a characteristic by 1, to a maximum of 120. 
+You start level 1 with 120 points and 80 in each characteristic. You can spend 1 point to increase a characteristic by 1, to a maximum of 120. Your background then grants you an additional 30 points that can be spent on the characteristics it states. 
 ### Characteristic Increases
 General feats give you 5 points which can be used to increase any characteristic they list by 1. Ability Score Increases give you 10 points to do the same. You can spend multiple points to increase the same characteristic. A characteristic cannot be increased beyond 100 + your proficiency bonus x 10. 
 ## Rolls
