@@ -12,7 +12,7 @@ Additionally, they are mapped to a value between 0 and 200, with humans averagin
 ### Determining Characteristics
 You start level 1 with 120 points and 80 in each characteristic. You can spend 1 point to increase a characteristic by 1, to a maximum of 120. 
 ### Characteristic Increases
-General feats give you 2 points which can be used to increase any characteristic they list by 1. Ability Score Increases give you 5 points to do the same. You can spend multiple points to increase the same characteristic. 
+General feats give you 5 points which can be used to increase any characteristic they list by 1. Ability Score Increases give you 10 points to do the same. You can spend multiple points to increase the same characteristic. A characteristic cannot be increased beyond 100 + your proficiency bonus x 10. 
 ## Rolls
 The standard d20 roll has been replaced with the Star Roll, where the lower you roll the better.
 ### Making a Roll
@@ -41,7 +41,7 @@ Advantage and disadvantage cancel each other out, and stack to a maximum of 2.
 ## Skills
 Skills are separated from characteristics, meaning (for example) you might use INT Awareness for one test, then PRE Awareness for another. Each skill has a rank from 0 (untrained) to 5 (superhuman). The maximum rank a creature can have on a skill is its level. 
 ### Tests
-Skills are used for tests, which replace skill checks. To make a test ask the GM if you can use any of the skills you wish to use, then make a Star Roll with one of the the characteristic(s) the GM has stated can be used and add to the tier of outcome your rank in the skill. Then tell the GM what the result rank (RR) is, and they'll narrate the outcome based on the difficulty rank (DR). The below table states the outcomes based on the RR and DR. An S means success, an F means fail, a C means a (negative) consequence and an R means reward. 
+Skills are used for tests, which replace skill checks. To make a test ask the GM if you can use any of the skills you wish to use, then make a Star Roll with one of the the characteristic(s) the GM has stated can be used and add to the tier of outcome your rank in the skill. Treat a fumble as a tier 0 and a critical as a tier 4. Then tell the GM what the result rank (RR) is, and they'll narrate the outcome based on the difficulty rank (DR). The below table states the outcomes based on the RR and DR. An S means success, an F means fail, a C means a (negative) consequence and an R means reward. 
 
 | RR/DR | 1   | 2     | 3     | 4     | 5     | 6     | 7     | 8     |
 | ----- | --- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
@@ -95,7 +95,9 @@ If an ability lets you add a characteristic's damage to an attack, divide the ch
 You make a star roll as normal. A creature fails the saving throw gaining all of the failed effects if its defence is less than the potency of the roll, or the success effects if it is greater than or equal. The damage is then calculated using the Attack Rolls section above. 
 
 On a fumble, every target succeeds their saving throw regardless of their defences, and any damage becomes 0. On a critical, every target fails their saving throw regardless of their defences and all damage is doubled. 
-### Example 1
+### Limited generation
+Some abilities require you to make multiple rolls as part of the same action. If this happens, only the first roll is able to generate Hope or Fear. 
+### Example
 Lets use the example of casting fireball as a wizard. REA would be their spellcasting modifier, lets say its 20 (+5 mod). 
 
 They roll 3d12 and add 5, lets say the roll 7 (Neutral), 10 (Hope) and 10 (Fear) for a total roll of 27 and a total of 32, a T3 result. for a T3 the damage is increased by 50%, and the potency is equal to 5. Creatures with a reflex defence of 4 or less with take the average of $8d6*1.5$ damage, which is 42, and creatures with a reflex defence of 5 or more will take the average of $8d6*0.75$ damage, which is 21. 
