@@ -12,7 +12,7 @@ Additionally, they are mapped to a value between -10 and +10 with humans averagi
 ### Determining Characteristics
 You start with -4 in each characteristic. You then have 30 points to spend to increase them, spending 1 point to increase a negative characteristic by 1, and 2 points to increase a positive or zero characteristic by 1. A characteristic cannot exceed 4. Backgrounds do not affect your characteristics. 
 
-A calculator for this is linked [Here.](https://docs.google.com/spreadsheets/d/10han8H0nb-1awZGC-ARVeVARd61APtX8_FR0-KDm__k/edit?usp=sharing)
+A calculator for this is linked [Here.](https://docs.google.com/spreadsheets/d/10han8H0nb-1awZGC-ARVeVARd61APtX8_FR0-KDm__k/copy)
 ### Characteristic Increases
 General feats let you increase any characteristic in their selection by 1. Ability Score Increases let you increase any two characteristics each by 1. 
 ## Rolls
