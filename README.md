@@ -8,38 +8,29 @@ Your characteristics are changed in name, but their purpose remains fairly simil
 - Wisdom -> Intuition (INT)
 - Charisma -> Prescence (PRE)
 
-Additionally, they are mapped to a value between 0 and 200, with humans averaging around 100 in everything, with a deviation of 10.
+Additionally, they are mapped to a value between -10 and +10 with humans averaging around 0 with a deviation of 2. 
 ### Determining Characteristics
-You start level 1 with 120 points and 80 in each characteristic. You can spend 1 point to increase a characteristic by 1, to a maximum of 120. Your background then grants you an additional 30 points that can be spent on the characteristics it states. 
+You start with -4 in each characteristic. You then have 30 points to spend to increase them, spending 1 point to increase a negative characteristic by 1, and 2 points to increase a positive or zero characteristic by 1. A characteristic cannot exceed 4. Backgrounds do not affect your characteristics. 
+
+A calculator for this is linked [Here.](https://docs.google.com/spreadsheets/d/10han8H0nb-1awZGC-ARVeVARd61APtX8_FR0-KDm__k/edit?usp=sharing)
 ### Characteristic Increases
-General feats give you 5 points which can be used to increase any characteristic they list by 1. Ability Score Increases give you 10 points to do the same. You can spend multiple points to increase the same characteristic. A characteristic cannot be increased beyond 100 + your proficiency bonus x 10. 
+General feats let you increase any characteristic in their selection by 1. Ability Score Increases let you increase any two characteristics each by 1. 
 ## Rolls
-The standard d20 roll has been replaced with the Star Roll, where the lower you roll the better.
+The standard d20 roll has been replaced with the Star Roll, where the higher the better. 
 ### Making a Roll
-To make a roll you need 3d20 and a d10. Designate one of each of the 3d20 as the Hope, Fear and Neutral dice. 
-1. Roll 3d20, treating a roll of 20 as 0. 
-2. Select the dice which rolled a value between the other two, or if multiple rolled the same select them all. Multiply this number by 10.
-3. Roll 1d10 and add it to the total.
+To make a roll you need 3d12 and potentially 3d6. Designate one of each of the 3d12 as the Hope, Fear and Neutral dice. To make a roll you roll the 3d12 and add to it the value of the relevant characteristic. 
 ### Outcome
 - **Fumble.** Obtained if the Fear dice rolls equal to the Neutral dice. The worst possible outcome. 
-- **Tier 1 (T1).** Obtained if you roll greater than your characteristic. The worst probable outcome.
-- **Tier 2 (T2).** Obtained if you roll less than or equal to your characteristic, but greater than half it. A middle of the road outcome. 
-- **Tier 3 (T3).** Obtained if you roll less than or equal to half your characteristic. The best probable outcome.
+- **Tier 1 (T1).** Obtained if you roll less than 20. The worst probable outcome.
+- **Tier 2 (T2).** Obtained if you roll greater than or equal to 20, but less than 30. A middle of the road outcome. 
+- **Tier 3 (T3).** Obtained if you roll greater than or equal to 30. The best probable outcome.
 - **Critical.** Obtained if the Hope dice rolls equal to the Neutral dice, or all three dice roll the same. The best possible outcome.
 ### Hope and Fear
-If the Hope dice is selected you gain 1 Hope. If the Fear dice is selected the GM gains one Fear. Hope is used to fuel your abilities, and Fear the GM's. Both dice can be selected. 
+If the Hope dice rolls the highest the players gain 1 Hope. If the Fear dice rolls the highest the GM gains 1 Fear. Both pools have a maximum capacity of 2x the number of players or 10, whichever's higher. Players share a Hope pool and any player can spend Hope from it. Monster's share a Fear pool and any monster can spend Fear from it. Furthermore the GM can spend fear to increase the tension of the game or up the stakes. 
 ### Advantage and Disadvantage
-Advantage and disadvantage cancel each other out, and stack to a maximum of 2. 
-
-**Single Advantage.** When selecting a dice, select the lowest of the hope or fear dice. Still roll the neutral dice to determine if you crit.
-
-**Double Advantage.** When selecting a dice, select the lowest of all three dice. 
-
-**Single Disadvantage.** Select the highest of the hope and fear dice.
-
-**Double Disadvantage.** Select the highest of all three dice. 
+Advantage and disadvantage cancel each other out, and stack to a maximum of 3. For each level of advantage you add 1d6 to the roll, and for disadvantage you subtract 1d6. 
 ## Skills
-Skills are separated from characteristics, meaning (for example) you might use INT Awareness for one test, then PRE Awareness for another. Each skill has a rank from 0 (untrained) to 5 (superhuman). The maximum rank a creature can have on a skill is its level. 
+Skills are separated from characteristics, meaning (for example) you might use INT Awareness for one test, then PRE Awareness for another. Each skill has a rank from 0 (untrained) to 5 (superhuman). 
 ### Tests
 Skills are used for tests, which replace skill checks. To make a test ask the GM if you can use any of the skills you wish to use, then make a Star Roll with one of the the characteristic(s) the GM has stated can be used and add to the tier of outcome your rank in the skill. Treat a fumble as a tier 0 and a critical as a tier 4. Then tell the GM what the result rank (RR) is, and they'll narrate the outcome based on the difficulty rank (DR). The below table states the outcomes based on the RR and DR. An S means success, an F means fail, a C means a (negative) consequence and an R means reward. 
 
@@ -53,44 +44,19 @@ Skills are used for tests, which replace skill checks. To make a test ask the GM
 | 6     | S+R | S+R   | S+R   | S+R   | S     | S+C   | F + R | F     |
 | 7     | S+R | S+R   | S+R   | S+R   | S+R   | S     | S+C   | F + R |
 | 8     | S+R | S+R   | S+R   | S+R   | S+R   | S+R   | S     | S+C   |
+#### Pushing a Test
+You can expend 1 Hope to push a test, rerolling the test. You can only do so once per test. 
 ## Abilities
 DnD's abilities are altered to use the Star Roll system. Saving throws are replaced with potencies vs defences, and attack rolls are replaced with Star Rolls. Armour Class modifies hit points, explained in [Stamina](#Stamina). 
+### Attack Rolls
+You make a star roll using the relevant characteristic. On a T1 the damage is halved, on a T2 the damage is normal and on a T3 you add half the damage to the total. On a fumble the attack misses. On a critical the damage is doubled. 
 ### Defences
 You have three defences, which are calculated as the highest of two characteristics. When an ability asks for a saving throw it should be converted to one of these based on the save it asks for. 
 - Fortitude: STR and TOU
 - Reflex: DEX and INT 
 - Will: REA and PRE
 ### Potencies
-When an ability causes a saving throw, the characteristic you use for the save DC is used to determine the potency. Low potency is the characteristic modifier minus 20, mid potency is the modifier minus 10 and high potency is the modifier. 
-### Attack Rolls
-You make a star roll using the relevant characteristic. On a T1 the damage is halved, on a T2 the damage is normal and on a T3 you add half the damage to the total. On a fumble the attack misses. On a critical the damage is doubled. 
-### Modifier Damage
-If an ability lets you add a characteristic's damage to an attack, divide the characteristic by 10 and subtract 10. This pattern is produced in the table below. 
-
-| Characteristic | Damage Modifier |
-| -------------- | --------------- |
-| $\leq 9$       | -10             |
-| 10-19          | -9              |
-| 20-29          | -8              |
-| 30-39          | -7              |
-| 40-49          | -6              |
-| 50-59          | -5              |
-| 60-69          | -4              |
-| 70-79          | -3              |
-| 80-89          | -2              |
-| 90-99          | -1              |
-| 100-109        | 0               |
-| 110-119        | +1              |
-| 120-129        | +2              |
-| 130-139        | +3              |
-| 140-149        | +4              |
-| 150-159        | +5              |
-| 160-169        | +6              |
-| 170-179        | +7              |
-| 180-189        | +8              |
-| 190-199        | +9              |
-| $\geq 200$     | +10             |
-
+When an ability causes a saving throw, the characteristic you use for the save DC is used to determine the potency. Low potency is the characteristic modifier minus 4 mid potency is the modifier minus 2 and high potency is the modifier. 
 ### Saving Throws
 You make a star roll as normal. A creature fails the saving throw gaining all of the failed effects if its defence is less than the potency of the roll, or the success effects if it is greater than or equal. The damage is then calculated using the Attack Rolls section above. 
 
@@ -101,50 +67,44 @@ Some abilities require you to make multiple rolls as part of the same action. If
 Lets use the example of casting fireball as a wizard. REA would be their spellcasting modifier, lets say its 20 (+5 mod). 
 
 They roll 3d12 and add 5, lets say the roll 7 (Neutral), 10 (Hope) and 10 (Fear) for a total roll of 27 and a total of 32, a T3 result. for a T3 the damage is increased by 50%, and the potency is equal to 5. Creatures with a reflex defence of 4 or less with take the average of $8d6*1.5$ damage, which is 42, and creatures with a reflex defence of 5 or more will take the average of $8d6*0.75$ damage, which is 21. 
+### Advice
+I strong advise you to write down at least the average damage of your most common damage dealing abilities, and ideally write them down including the amount of damage each tier does. Calculating the average damage of an ability mid-combat slows down the game significantly. 
 ## Stamina 
 Creatures' HP are replaced with stamina, a measure of their armour's ability to block damage, their ability to dodge it, and their ability to endure through it. This is calculated as multiples of their recovery value. Their recovery value is equal to (HP + Level x AC modifier)/8. 
 
 AC modifier is calculated as their AC divided by 2 and then subtract 5. For example an AC of 17 gives an AC modifier of +3. 
 ### Hit Locations
-All non-minion creatures and some large objects have hit locations, each with a separate stamina pool. Attack rolls target a single hit location which is determined by multiplying the neutral dice's roll by 10 and the d10's roll. Area of effect abilities target all hit locations. 
-Four limbed creatures:
+All non-minion creatures and some large objects have hit locations, each with a separate stamina pool. Area of effect abilities target all hit locations. Attack rolls target one hit location. Its type is determined by the Hope dice, and the specific hit location is determined by the Fear dice.
 
-| Hit Location | Type | Roll d200 | Max Stamina       |
-| ------------ | ---- | --------- | ----------------- |
-| Head         | Crux | 1-22      | 2x recovery value |
-| Right Arm    | Limb | 23-55     | 3x recovery value |
-| Left Arm     | Limb | 56-88     | 3x recovery value |
-| Right Leg    | Limb | 89-121    | 3x recovery value |
-| Left Leg     | Limb | 122-154   | 3x recovery value |
-| Body         | Core | 155-200   | 4x recovery value |
+| Hope Dice | Hit Location Type | Description                                                                |
+| --------- | ----------------- | -------------------------------------------------------------------------- |
+| 11-12     | Crux              | A weak point on an enemy, such as their head.                              |
+| 8-10      | Arm               | A limb used for manipulating objects or somatic components.                |
+| 5-7       | Leg               | A limb used for movement.                                                  |
+| 1-4       | Body              | The bulk of a creature, typically what attaches their limbs to their crux. |
 
-Six limbed creatures:
+#### 2 Limbs
 
-| Hit Location | Type | Roll d200 | Max Stamina       |
-| ------------ | ---- | --------- | ----------------- |
-| Head         | Crux | 1-17      | 2x recovery value |
-| Right Arm    | Limb | 18-42     | 3x recovery value |
-| Left Arm     | Limb | 43-67     | 3x recovery value |
-| Right Extra  | Limb | 68-92     | 3x recovery value |
-| Left Extra   | Limb | 93-117    | 3x recovery value |
-| Right Leg    | Limb | 118-142   | 3x recovery value |
-| Left Leg     | Limb | 143-167   | 3x recovery value |
-| Body         | Core | 168-200   | 4x recovery value |
-
-Eight limbed creatures:
-
-| Hit Location  | Type | Roll d200 | Max Stamina       |
-| ------------- | ---- | --------- | ----------------- |
-| Head          | Crux | 1-13      | 2x recovery value |
-| Right Arm     | Limb | 14-33     | 3x recovery value |
-| Left Arm      | Limb | 34-53     | 3x recovery value |
-| Right Extra 1 | Limb | 54-73     | 3x recovery value |
-| Left Extra 1  | Limb | 74-93     | 3x recovery value |
-| Right Extra 2 | Limb | 94-113    | 3x recovery value |
-| Left Extra 2  | Limb | 114-133   | 3x recovery value |
-| Right Leg     | Limb | 134-153   | 3x recovery value |
-| Left Leg      | Limb | 154-173   | 3x recovery value |
-| Body          | Core | 174-200   | 4x recovery value |
+| Fear Dice | Hit Location |
+| --------- | ------------ |
+| 6-12      | Right Limb   |
+| 1-5       | Left Limb    |
+#### 4 Limbs
+| Fear Dice | Hit Location |
+| --------- | ------------ |
+| 10-12     | Right Limb 2 |
+| 7-9       | Left Limb 2  |
+| 4-6       | Right Limb 1 |
+| 1-3       | Left Limb 1  |
+#### 6 Limbs
+| Fear Dice | Hit Location |
+| --------- | ------------ |
+| 11-12     | Right Limb 3 |
+| 9-10      | Left Limb 3  |
+| 7-8       | Right Limb 2 |
+| 5-6       | Left Limb 2  |
+| 3-4       | Right Limb 1 |
+| 1-2       | Left Limb 1  |
 ### Concentration
 If you take damage greater than your recovery value you must make a T2 TOU test or drop concentration. If the damage is greater than twice your recovery value, the tier becomes T3. If it is more than this, you automatically drop concentration. 
 ### Wound Levels
@@ -181,19 +141,29 @@ You start with a pool of 3d12. At the start of each of your turns, and each time
 
 **Deny.** You deny death, causing the affected area to be permanently injured. You lose the dying condition and fall unconscious until the wound level of the hit location that caused this condition is reduced to major. 
 ### Treating Wounds
-A wound can be treated to negate its condition until the hit location receives further damage. A major wound can be treated by a DR 2 test or by Spare the Dying, negating its condition. A critical wound can be treated by a DR 4 test or by Spare the Dying, negating the dying condition. Wounds must heal above their respective range before the conditions are permanently removed. Furthermore a wound is considered treated temporarily if the hit location regenerates stamina. 
+A wound can be treated to negate its condition until the hit location receives further damage. A major wound can be treated by a DR 2 test negating its condition, and a critical wound can be treated by a DR 4 test which negates the dying condition. Additionally the Spare the Dying spell can be used to reduce the DR by 2 for the relevant test. Any healing to a hit location also treats the wound. 
 ## Resting
 You recover stamina equal to your recovery value each period of time spent performing light activity, as detailed in the table below. It should be noted if something in the rules mentions a long rest, it instead functions of a medium rest. 
 
-| Rest Type | Length of Time | Wound Recovery |
-| --------- | -------------- | -------------- |
-| Short     | 1 hour         | Strain         |
-| Medium    | 1 week         | Major          |
-| Long      | 1 month        | Critical       |
+| Rest Type | Length of Time | Wound Recovery | Hope Gain    |
+| --------- | -------------- | -------------- | ------------ |
+| Short     | 1 hour         | Strain         | 0            |
+| Medium    | 1 week         | Major          | 1 per player |
+| Long      | 1 month        | Critical       | 1 per player |
 ## Initiative
-Monsters act in groups where one group is approximately equivalent in power to one player. One player rolls a d20, on a roll of 10 or less the players go first, otherwise the monsters do. They then take it in turns until all groups of both sides have had a turn. 
+Monsters act in groups where one group is approximately equivalent in power to one player. One monster and one player (those with the highest initiative) both make a Star Roll using their initiative bonus, and the side which rolls highest goes first.
+
+**Surprise.** Any creatures that are surprised skip their first turn. 
+## Lighting
+Darkness is considered pitch black, and unseeable. Dim light is considered dark enough such that colour cannot be perceived. At night time the world enters a state of dim light, cast by the stars and moon. 
+
+Dim light imposes DIS 1 on Star Rolls using sight and darkness prevents them entirely. 
 # Skill List
-EoS uses a different skill list to DnD. For each proficiency (skill or tool) you gain a 1 skill point and for each expertise you gain 3. You must spend skill points equal to the rank you wish to increase it to increase the rank of a skill. No skills can have a rank higher than your PB minus 1. 
+EoS uses a different skill list to DnD that also combines tool proficencies. To increase a skill's rank you must spend skill points equal the rank you're increasing it to. You cannot increase a skill's rank above your proficiency bonus or above 5. 
+
+**Gaining Skill Points.** Each time you gain a proficiency in a skill or tool you gain 1 skill point. Each time you gain expertise you gain 3 skill points. Every even level you gain 1 skill point.
+
+**Changing Skills.** Each time you level up you can select a skill and gain skill points equal to its rank, then reduce its rank by one. You may then redistribute these skill points as you wish. 
 ### Crafting Skills
 - Alchemy
 - Architecture
@@ -214,10 +184,10 @@ EoS uses a different skill list to DnD. For each proficiency (skill or tool) you
 - Awareness 
 - Brag
 - Disguise 
-- Empathise
 - Eavesdrop 
 - Game
 - Wrangle
+- Insight 
 - Interrogate
 - Intimidate
 - Lead
@@ -277,7 +247,7 @@ You spend hope to gain spell slots detailed below, based on your spellcasting le
 | 17-18 | 3                 | 5                 | 8                 | 9                 |
 | 19-20 | 4                 | 6                 | 8                 | 9                 |
 ### Attacks
-You spend 1 hope to target an attack roll to a creature's core or limbs, or 2 hope to target their crux.
+You spend 1 hope to target an attack roll to a specific hit location of a creature. 
 ## Class Specific
 `Note: nothing sublcass specific is here, that will be done on a case-by-case basis`
 ### Artificer
