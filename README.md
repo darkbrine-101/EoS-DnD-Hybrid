@@ -20,11 +20,11 @@ The standard d20 roll has been replaced with the Star Roll, where the higher the
 ### Making a Roll
 To make a roll you need 3d12 and potentially 3d6. Designate one of each of the 3d12 as the Hope, Fear and Neutral dice. To make a roll you roll the 3d12 and add to it the value of the relevant characteristic. 
 ### Outcome
-- **Fumble.** Obtained if the Fear dice rolls equal to the Neutral dice. The worst possible outcome. 
+- **Fumble.** Obtained if the Neutral dice rolls a natural 1. The worst possible outcome. 
 - **Tier 1 (T1).** Obtained if you roll less than 20. The worst probable outcome.
 - **Tier 2 (T2).** Obtained if you roll greater than or equal to 20, but less than 30. A middle of the road outcome. 
 - **Tier 3 (T3).** Obtained if you roll greater than or equal to 30. The best probable outcome.
-- **Critical.** Obtained if the Hope dice rolls equal to the Neutral dice, or all three dice roll the same. The best possible outcome.
+- **Critical.** Obtained if the Neutral dice rolls a natural 12. The best possible outcome. 
 ### Hope and Fear
 If the Hope dice rolls the highest the players gain 1 Hope. If the Fear dice rolls the highest the GM gains 1 Fear. Both pools have a maximum capacity of 2x the number of players or 10, whichever's higher. Players share a Hope pool and any player can spend Hope from it. Monster's share a Fear pool and any monster can spend Fear from it. Furthermore the GM can spend fear to increase the tension of the game or up the stakes. 
 ### Advantage and Disadvantage
