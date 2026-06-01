@@ -1,170 +1,65 @@
-# Changes
+# General Changes
+## Dice
+To play EoS you need 3d20 and 1d10. 
 ## Characteristics
-Your characteristics are changed in name, but their purpose remains fairly similar. 
-- Strength: unchanged. 
-- Dexterity: unchanged. 
-- Constitution -> Toughness (TOU)
-- Intelligence -> Reason (REA)
-- Wisdom -> Intuition (INT)
-- Charisma -> Prescence (PRE)
+### Overview #
+Characteristics represent general areas of ability for a character. In EoS they range in value from 0 to 200, with humans having an average of 100 and a deviation of 10. This means characters with 100 in a characteristic are better than 50% of humans, 110, 84% of humans, and 120, 97% of humans. The characteristics in EoS are similar to DnD both in name and purpose. 
+### Characteristic List
+All creatures have the following characteristics:
+- **Strength (STR).** 
+- **Dexterity (DEX).**
+- **Toughness (TOU).** Equivalent to constitution in DnD. 
+- **Reason (REA).** Equivalent to intelligence in DnD. 
+- **Intuition (INT).** Equivalent to wisdom in DnD (not to be confused with intelligence).
+- **Presence (PRE).** Equivalent to charisma in DnD. 
+### Determining Characteristics 
+#### At Level One
+You start with 120 points and each characteristic at 80. You require 1 point to increase characteristics by 1 if they are between 80 and 99, and 2 points if they are between 100 and 119. Characteristics cannot exceed 120 at character creation. 
+#### At Higher Levels
+When you gain feats you gain points based on the feat. 1 point can be spent to increase 1 characteristic by 1. If you gain multiple points, you may invest them all in 1 characteristic or spread them between any number.
 
-Additionally, they are mapped to a value between -10 and +10 with humans averaging around 0 with a deviation of 2. 
-### Determining Characteristics
-You start with -4 in each characteristic. You then have 30 points to spend to increase them, spending 1 point to increase a negative characteristic by 1, and 2 points to increase a positive or zero characteristic by 1. A characteristic cannot exceed 4. Backgrounds do not affect your characteristics. 
+**General Feats.** General feats grant you 2 points, that can only be spent on characteristics they list.
 
-A calculator for this is linked [Here.](https://docs.google.com/spreadsheets/d/10han8H0nb-1awZGC-ARVeVARd61APtX8_FR0-KDm__k/copy)
-### Characteristic Increases
-General feats let you increase any characteristic in their selection by 1. Ability Score Increases let you increase any two characteristics each by 1. 
+**Ability Score Increases.** Ability score increases grant you 4 points, that can be spent on any characteristics. 
+
+**Limits.** It becomes increasingly difficult to raise characteristics above your level, representing by a soft and hard limit.
+- **Soft Limit.** Raising a characteristic above 100 + 10x your characters PB requires 2 points per increase by 1. 
+- **Hard Limit.** You cannot raise a characteristic above the soft limit + 10. 
 ## Rolls
-The standard d20 roll has been replaced with the Star Roll, where the higher the better. 
-### Making a Roll
-To make a roll you need 3d12 and potentially 3d6. Designate one of each of the 3d12 as the Hope, Fear and Neutral dice. To make a roll you roll the 3d12 and add to it the value of the relevant characteristic. 
-### Outcome
-- **Fumble.** Obtained if the Neutral dice rolls a natural 1. The worst possible outcome. 
-- **Tier 1 (T1).** Obtained if you roll less than 20. The worst probable outcome.
-- **Tier 2 (T2).** Obtained if you roll greater than or equal to 20, but less than 30. A middle of the road outcome. 
-- **Tier 3 (T3).** Obtained if you roll greater than or equal to 30. The best probable outcome.
-- **Critical.** Obtained if the Neutral dice rolls a natural 12. The best possible outcome. 
-### Hope and Fear
-If the Hope dice rolls the highest the players gain 1 Hope. If the Fear dice rolls the highest the GM gains 1 Fear. Both pools have a maximum capacity of 2x the number of players or 10, whichever's higher. Players share a Hope pool and any player can spend Hope from it. Monster's share a Fear pool and any monster can spend Fear from it. Furthermore the GM can spend fear to increase the tension of the game or up the stakes. 
+### The Star Roll
+All d20 rolls in DnD are replaced with a Star Roll. To make a star roll you must have 3d20 and 1d10. You should designate 1 of the d20 as the Hope dice, 1 as the Fear dice and the last as the Fate dice. To make a Star Roll follow the below steps.
+1. Roll the 3d20, treating a roll of 20 as 0. Then select the dice which's value is between the other two's. If multiple dice roll the same select all of them. 
+2. Multiply this value by 10 and roll 1d10, adding it to the total. Treat a roll of 10 on the d10 as a roll of 0.
+3. Lastly if the total is 00, treat this as a roll of 200. Compare the total to the characteristic used for the roll to determine the outcome. 
+### Outcomes
+A Star Roll has 5 possible outcomes, Fumble, Tiers 1-3 and Critical.
+- **Fumble.** Obtained if the Fate dice rolls a natural 19. The worst possible outcome.
+- **Tier 1 (T1).** Obtained if the total is greater than the characteristic. The worst plausible outcome.
+- **Tier 2 (T2).** Obtained if the total is less than or equal to the characteristic, but greater than half the characteristic. A middle of the road outcome.
+- **Tier 3 (T3).** Obtained if the total is less than or equal to half the characteristic. The best plausible outcome. 
+- **Critical.** Obtained if the Fate dice roll a natural 0. The best possible outcome. 
 ### Advantage and Disadvantage
-Advantage and disadvantage cancel each other out, and stack to a maximum of 3. For each level of advantage you add 1d6 to the roll, and for disadvantage you subtract 1d6. 
+External circumstances affect how likely a Star Roll is to succeed by applying advantage or disadvantage. Advantage and disadvantage stack to a maximum of 2 in either direction, and cancel each other out. They affect the Star Roll as described below.
+- **Double Advantage (ADV 2).** The tier of the roll is increased by 1. This allows a T3 to become a Critical and a Fumble to become a T1. The tier cannot be increased beyond critical. 
+- **Single Advantage (ADV 1).** Only consider the 2d20 that rolls the furthest left. Of those two take the lowest, then select all d20 with the same value. 
+- **Single Disadvantage (DIS 1).** Only consider the left 2d20 again, this time taking the highest of the 2 and selecting all d20 with the same value. 
+- **Double Disadvantage (DIS 2).** The tier of the roll is reduced by 1. This follows the same rules as ADV 2, and the tier cannot be reduced below fumble. 
+### Hope and Fear
+Hope and Fear are resourced used by the players and the GM to respectively, to fuel powerful abilities. Only rolls made by players can generate Hope and Fear. If the Hope dice is selected by the Star Roll the players gain 1 Hope. If the Fear dice is selected, the GM gains 1 Fear. The players share a Hope pool and the GM has a Fear pool shared between NPCs. Both pools have a maximum capacity of 4x the number of players, with a minimum size of 12. 
+### D200 Rolls
+Some abilities and effects require a d200 roll. This requires rolling a d20 and d10 as follows. 
+1. Roll a d20, treating a roll of 20 as 0. Multiply this value by 10.
+2. Roll a d10, treating a roll of 10 as 0. Add this to the d20.
+3. If the total is 00 it becomes 200. Otherwise the result is the total.
 ## Skills
-Skills are separated from characteristics, meaning (for example) you might use INT Awareness for one test, then PRE Awareness for another. Each skill has a rank from 0 (untrained) to 5 (superhuman). 
-### Tests
-Skills are used for tests, which replace skill checks. To make a test ask the GM if you can use any of the skills you wish to use, then make a Star Roll with one of the the characteristic(s) the GM has stated can be used and add to the tier of outcome your rank in the skill. Treat a fumble as a tier 0 and a critical as a tier 4. Then tell the GM what the result rank (RR) is, and they'll narrate the outcome based on the difficulty rank (DR). The below table states the outcomes based on the RR and DR. An S means success, an F means fail, a C means a (negative) consequence and an R means reward. 
+### Overview 
+Skills in EoS serve the same purpose as in DnD, but with several differences. EoS skills are not tied to any specific characteristic, and are given a numeric proficiency (called rank) between 1 and 6. EoS also has a much larger skill list than DnD, and many of the skills within in it are far more specific. 
 
-| RR/DR | 1   | 2     | 3     | 4     | 5     | 6     | 7     | 8     |
-| ----- | --- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| 1     | S+C | F + R | F     | F + C | F + C | F + C | F + C | F + C |
-| 2     | S   | S+C   | F + R | F     | F + C | F + C | F + C | F + C |
-| 3     | S+R | S     | S+C   | F + R | F     | F + C | F + C | F + C |
-| 4     | S+R | S+R   | S     | S+C   | F + R | F     | F + C | F + C |
-| 5     | S+R | S+R   | S+R   | S     | S+C   | F + R | F     | F + C |
-| 6     | S+R | S+R   | S+R   | S+R   | S     | S+C   | F + R | F     |
-| 7     | S+R | S+R   | S+R   | S+R   | S+R   | S     | S+C   | F + R |
-| 8     | S+R | S+R   | S+R   | S+R   | S+R   | S+R   | S     | S+C   |
-#### Pushing a Test
-You can expend 1 Hope to push a test, rerolling the test. You can only do so once per test. 
-## Abilities
-DnD's abilities are altered to use the Star Roll system. Saving throws are replaced with potencies vs defences, and attack rolls are replaced with Star Rolls. Armour Class modifies hit points, explained in [Stamina](#Stamina). 
-### Attack Rolls
-You make a star roll using the relevant characteristic. On a T1 the damage is halved, on a T2 the damage is normal and on a T3 you add half the damage to the total. On a fumble the attack misses. On a critical the damage is doubled. 
-### Defences
-You have three defences, which are calculated as the highest of two characteristics. When an ability asks for a saving throw it should be converted to one of these based on the save it asks for. 
-- Fortitude: STR and TOU
-- Reflex: DEX and INT 
-- Will: REA and PRE
-### Potencies
-When an ability causes a saving throw, the characteristic you use for the save DC is used to determine the potency. Low potency is the characteristic modifier minus 4 mid potency is the modifier minus 2 and high potency is the modifier. 
-### Saving Throws
-You make a star roll as normal. A creature fails the saving throw gaining all of the failed effects if its defence is less than the potency of the roll, or the success effects if it is greater than or equal. The damage is then calculated using the Attack Rolls section above. 
+**Specific Beats General.** More general skills cannot be used for things covered by more specific skills. For example, the perceive skill cannot be used to look for an object or creature as this is covered by the search skill. While the search skill could be used to search for tracks, the track skill must be used to follow them. 
 
-On a fumble, every target succeeds their saving throw regardless of their defences, and any damage becomes 0. On a critical, every target fails their saving throw regardless of their defences and all damage is doubled. 
-### Limited generation
-Some abilities require you to make multiple rolls as part of the same action. If this happens, only the first roll is able to generate Hope or Fear. 
-### Example
-Lets use the example of casting fireball as a wizard. REA would be their spellcasting modifier, lets say its 20 (+5 mod). 
-
-They roll 3d12 and add 5, lets say the roll 7 (Neutral), 10 (Hope) and 10 (Fear) for a total roll of 27 and a total of 32, a T3 result. for a T3 the damage is increased by 50%, and the potency is equal to 5. Creatures with a reflex defence of 4 or less with take the average of $8d6*1.5$ damage, which is 42, and creatures with a reflex defence of 5 or more will take the average of $8d6*0.75$ damage, which is 21. 
-### Advice
-I strong advise you to write down at least the average damage of your most common damage dealing abilities, and ideally write them down including the amount of damage each tier does. Calculating the average damage of an ability mid-combat slows down the game significantly. 
-## Stamina 
-Creatures' HP are replaced with stamina, a measure of their armour's ability to block damage, their ability to dodge it, and their ability to endure through it. This is calculated as multiples of their recovery value. Their recovery value is equal to (HP + Level x AC modifier)/8. 
-
-AC modifier is calculated as their AC divided by 2 and then subtract 5. For example an AC of 17 gives an AC modifier of +3. 
-### Hit Locations
-All non-minion creatures and some large objects have hit locations, each with a separate stamina pool. Area of effect abilities target all hit locations. Attack rolls target one hit location. Its type is determined by the Hope dice, and the specific hit location is determined by the Fear dice.
-
-| Hope Dice | Hit Location Type | Description                                                                |
-| --------- | ----------------- | -------------------------------------------------------------------------- |
-| 11-12     | Crux              | A weak point on an enemy, such as their head.                              |
-| 8-10      | Arm               | A limb used for manipulating objects or somatic components.                |
-| 5-7       | Leg               | A limb used for movement.                                                  |
-| 1-4       | Body              | The bulk of a creature, typically what attaches their limbs to their crux. |
-
-#### 2 Limbs
-
-| Fear Dice | Hit Location |
-| --------- | ------------ |
-| 6-12      | Right Limb   |
-| 1-5       | Left Limb    |
-#### 4 Limbs
-| Fear Dice | Hit Location |
-| --------- | ------------ |
-| 10-12     | Right Limb 2 |
-| 7-9       | Left Limb 2  |
-| 4-6       | Right Limb 1 |
-| 1-3       | Left Limb 1  |
-#### 6 Limbs
-| Fear Dice | Hit Location |
-| --------- | ------------ |
-| 11-12     | Right Limb 3 |
-| 9-10      | Left Limb 3  |
-| 7-8       | Right Limb 2 |
-| 5-6       | Left Limb 2  |
-| 3-4       | Right Limb 1 |
-| 1-2       | Left Limb 1  |
-### Concentration
-If you take damage greater than your recovery value you must make a T2 TOU test or drop concentration. If the damage is greater than twice your recovery value, the tier becomes T3. If it is more than this, you automatically drop concentration. 
-### Wound Levels
-A hit location's stamina is reduced by any damage it receives, it can continue to be reduced indefinably, however complications arise based on how damaged a hit location is.
-
-**Strain (>0).** Minor or negligible injury to a hit location. 
-
-**Major (-Max to 0).** Significant injury to a hit location, affecting its ability to be used. This level of injury causes the following effects dependant on hit location:
-- **Crux.** You become dazed.
-- **Core.** You become agonised.
-- **Limb.** The limb becomes disabled. 
-
-**Critical (< -Max).** Lethal injury to a hit location, rendering the affected creature incapacitated and objects unusable.  This level of injury causes the following effects dependant on hit location:
-- **Crux.** You become concussed.
-- **Core.** You start bleeding.
-- **Limb.** The limb is maimed. 
-#### Dazed
-You cannot concentrate. You can only take a bonus action or a move action. You cannot take reactions. 
-#### Agonised 
-Every time you take an action, bonus action, move or reaction the hit location takes damage equal to a number of d6 times your PB minus 1. (e.g. 2d6 at level 5)
-#### Disabled
-The limb cannot be used for actions. If it is used for walking you must drop prone and you cannot stand unless you are flying. If it is used for any other movement mode you cannot use this movement mode. 
-#### Concussed
-You are unconscious and dying. 
-#### Bleeding
-You are agonised and dying. 
-#### Maimed
-The limb is disabled and you are dying. 
-#### Dying
-You start with a pool of 3d12. At the start of each of your turns, and each time you take damage you must roll this pool and subtract from it each dice that rolls 4 or less. Once the pool is reduced to 0 you take a death action.
-`Note: after 5 death saves you are more likely to die than not`
-
-**Accept.** You accept death, allowing you to perform one last action which obtains a critical. You then die. 
-
-**Deny.** You deny death, causing the affected area to be permanently injured. You lose the dying condition and fall unconscious until the wound level of the hit location that caused this condition is reduced to major. 
-### Treating Wounds
-A wound can be treated to negate its condition until the hit location receives further damage. A major wound can be treated by a DR 2 test negating its condition, and a critical wound can be treated by a DR 4 test which negates the dying condition. Additionally the Spare the Dying spell can be used to reduce the DR by 2 for the relevant test. Any healing to a hit location also treats the wound. 
-## Resting
-You recover stamina equal to your recovery value each period of time spent performing light activity, as detailed in the table below. It should be noted if something in the rules mentions a long rest, it instead functions of a medium rest. 
-
-| Rest Type | Length of Time | Wound Recovery | Hope Gain    |
-| --------- | -------------- | -------------- | ------------ |
-| Short     | 1 hour         | Strain         | 0            |
-| Medium    | 1 week         | Major          | 1 per player |
-| Long      | 1 month        | Critical       | 1 per player |
-## Initiative
-Monsters act in groups where one group is approximately equivalent in power to one player. One monster and one player (those with the highest initiative) both make a Star Roll using their initiative bonus, and the side which rolls highest goes first.
-
-**Surprise.** Any creatures that are surprised skip their first turn. 
-## Lighting
-Darkness is considered pitch black, and unseeable. Dim light is considered dark enough such that colour cannot be perceived. At night time the world enters a state of dim light, cast by the stars and moon. 
-
-Dim light imposes DIS 1 on Star Rolls using sight and darkness prevents them entirely. 
-# Skill List
-EoS uses a different skill list to DnD that also combines tool proficencies. To increase a skill's rank you must spend skill points equal the rank you're increasing it to. You cannot increase a skill's rank above your proficiency bonus or above 5. 
-
-**Gaining Skill Points.** Each time you gain a proficiency in a skill or tool you gain 1 skill point. Each time you gain expertise you gain 3 skill points. Every even level you gain 1 skill point.
-
-**Changing Skills.** Each time you level up you can select a skill and gain skill points equal to its rank, then reduce its rank by one. You may then redistribute these skill points as you wish. 
-### Crafting Skills
+**Skill Categories.** Because EoS has so many skills, they're split by category. Crafting skills replace tool proficiencies, and are used when using the relevant tool. Interpersonal skills are used primarily in social encounters and are for dealing with creatures. Exploration skills are useful when adventuring or exploring, both in the wilderness and in rural areas. Lore skills are used for recalling or obtaining information both of specific scenarios and of the world in general. 
+### Skill List
+#### Crafting Skills
 - Alchemy
 - Architecture
 - Artwork 
@@ -180,7 +75,7 @@ EoS uses a different skill list to DnD that also combines tool proficencies. To 
 - Textiles 
 - Woodwork
 - Tinkering
-### Interpersonal Skills
+#### Interpersonal Skills
 - Awareness 
 - Brag
 - Disguise 
@@ -196,7 +91,7 @@ EoS uses a different skill list to DnD that also combines tool proficencies. To 
 - Persuade
 - Conceal
 - Steal
-### Exploration Skills
+#### Exploration Skills
 - Climb
 - Jump 
 - Endure 
@@ -212,7 +107,7 @@ EoS uses a different skill list to DnD that also combines tool proficencies. To 
 - Sneak 
 - Swim
 - Track
-### Lore Skills
+#### Lore Skills
 - Arcana
 - Crime
 - Culture
@@ -228,10 +123,204 @@ EoS uses a different skill list to DnD that also combines tool proficencies. To 
 - Rumour
 - Hierarchy  
 - Tactics 
+### Determining Skills
+#### At Level One
+At level 1, each time you gain a skill or tool proficiency you gain 1 skill point. Each time you gain expertise you gain 3 points. You can then spend these points on any skills you wish. To increase your rank in a skill by 1, you must spend points equal to the desired rank. For example, it takes 1 point to increase a skill from 0 to 1, then 2 to increase from 1 to 2. You cannot increase a skill's rank above your proficiency bonus. 
+#### At Higher Levels
+Every second level you gain 1 skill point. Each time this happens you are also free to reduce any number of skill's ranks by 1 to reclaim their skill points and then redistribute those points as you wish. Whenever a feat or class feature grants you more proficiencies or expertise use the rules in the section above to determine how many skill pints you get. 
+## Tests
+### Overview
+Tests replace skill checks in normal DnD. They are made each time a creature attempts something that they could reasonably fail at. 
+### Making a Test
+To make a test a characteristic and skill must be used. The GM will inform the player what characteristic they can use, and they must ask the GM about the skills they wish to use. They then make a Star Roll using the relevant characteristic and add to the outcome tier the chosen skill's rank. This the result rank (RR) for the test. When determining the RR a fumble should be considered a T0 and a critical T4. 
+### Outcome
+The RR of the test is compared against the difficulty rank (DR) set by the GM. Use the table below to resolve the outcome. 
+
+| RR/DR | 1   | 2     | 3     | 4     | 5     | 6     | 7     | 8     | 9     | 10    |
+| ----- | --- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| 1     | S+C | F + R | F     | F + C | F + C | F + C | F + C | F + C | F + C | F + C |
+| 2     | S   | S+C   | F + R | F     | F + C | F + C | F + C | F + C | F + C | F + C |
+| 3     | S+R | S     | S+C   | F + R | F     | F + C | F + C | F + C | F + C | F + C |
+| 4     | S+R | S+R   | S     | S+C   | F + R | F     | F + C | F + C | F + C | F + C |
+| 5     | S+R | S+R   | S+R   | S     | S+C   | F + R | F     | F + C | F + C | F + C |
+| 6     | S+R | S+R   | S+R   | S+R   | S     | S+C   | F + R | F     | F+C   | F+C   |
+| 7     | S+R | S+R   | S+R   | S+R   | S+R   | S     | S+C   | F + R | F     | F+C   |
+| 8     | S+R | S+R   | S+R   | S+R   | S+R   | S+R   | S     | S+C   | F + R | F     |
+| 9     | S+R | S+R   | S+R   | S+R   | S+R   | S+R   | S+R   | S     | S+C   | F + R |
+| 10    | S+R | S+R   | S+R   | S+R   | S+R   | S+R   | S+R   | S+R   | S     | S+C   |
+**Key:**
+- **Success (S).** The creature succeeds at what they're trying to do.
+- **Failure (F).** The creature cannot do what they were trying to do. 
+- **Reward (R).** A benefit, separate but potentially linked to what the creature was trying to do, occurs. 
+- **Consequence (C).**  A setback, separate but potentially linked to what the creature was trying to do, occurs. 
+## Abilities
+### Attacks
+When making an attack, rather than rolling to hit then rolling damage EoS instead combines the roll into one Star Roll. 
+#### Damage
+The base damage of an attack is equal to its average damage. It is recommended to calculate this before playing and write it down on your character sheet. To make an attack make a Star Roll. On a fumble the attack misses, on a T1 the attack deals half its base damage, on a T2 it deals its base damage, on a T3 it deals additional damage equal to half its base and on a critical it deals double its base damage. 
+#### Damage Modifiers
+If an attack adds a characteristic to its damage, you subtract 100 from the characteristic and divide by 10 to determine the damage it deals. 
+#### Hit Location
+Attacks are split into strikes and areas. A strike targets a single hit location and occurs for most attack rolls, whereas an area covers many if not all. In the case of an area, each hit location within the area takes the damage. In the case of a strike, the leftmost d20 is used in conjunction with the d10 (See [D200 Rolls](#D200%20Rolls) earlier) to make a d200. This value is then read out and the person running the creature who will add the damage to that hit location. 
+#### Varying advantage
+A Star Roll can have varying levels of advantage or disadvantage against the targets of it. In this case the same roll of the dice should be used, but the advantage and disadvantage rules should augment the result, meaning some targets will suffer different ties of outcome compared to others. For example, a 3d20 roll of 15, 10 and 13 (from left to right), and a d10 roll of 7, gives 137 with the tier reduced by 1 for DIS 2, 157 for DIS 1, 137 flat, 107 with ADV 1 and 137 with the tier increased by 1 for ADV 2. 
+#### Extra Attacks
+In EoS, if an attack action contains multiple attacks (e.g. scorching ray), one Star Roll is used. 
+
+**Damage.** The base damage of each tier should equal to one attack's base damage, and then be modified for target specific bonuses such as hex. 
+
+**Targeting.** Each individual attack can then be directed to different or the same target, and can be split between targets. 
+
+**Hit Locations.** If the attack consists of multiple strikes the leftmost d20 combined with the d10 determines the first target's hit location, the d20 that landed between the other 2 combined with the same d10 for the second target's hit location, and the rightmost d20 combined with the same d10 for the third target. Then back to the leftmost d20 for the 4th attack and so on. 
+### Saving Throws
+Saving throws are mostly removed in EoS. Instead, when an ability would normally require a saving throw the initiator (who used the ability)'s potency is compared to the defences of each of its targets. 
+#### Defences
+Each creature has 3 defences, each of which are the highest of two of their characteristics. 
+- **Fortitude.** Highest of Strength and Toughness. Used for strength or constitution saving throws. 
+- **Reflex.** Highest of Dexterity and Intuition. Used for dexterity saving throws. 
+- **Will.** Highest of Reason and Presence. Used for intelligence, charisma and wisdom saving throws.  
+#### Potencies 
+Each roll has 3 potencies, low, mid and high. Their value is based on the characteristic used for the Star Roll they belong to. 
+- **Low.** Characteristic minus 20.  
+- **Mid.** Characteristic minus 10.
+- **High.** Characteristic's value.  
+#### Effects
+A creature or object fails a saving throw if the potency is greater than their defence. If it is less than or equal to their defence they succeed. 
+
+**Damage.** With affects that deal damage if a potency is failed, the attack rules apply to the damage. So a T1 will deal half damage on fail, or quarter on success for example. 
+#### Saves
+A save is a d200 roll (see [D200 Rolls](#D200%20Rolls)) against the defence targeted by an effect. These are made if effects require further saving throws after their initial effect (e.g. sleep).
+
+**Concentration.** If a creature is concentrating and takes damage greater than or equal to their lowest damage threshold (See [Damage Thresholds](#Damage%20Thresholds)) they must succeed a fortitude save or drop concentration. If the damage is greater than or equal to their second damage threshold they automatically drop concentration. 
+## Health
+### Overview
+EoS replaced DnD's hit points with damage points, a system where each hit location accumulates damage points as it gradually becomes more damaged, eventually resulting in death. When a hit location reaches certain levels of damage points the severity of the wounds to that hit location increases, causing the hit location to become less effective and eventually leading to death. Combat in EoS is deadly, and the more severely damaged a hit location is, the less effective a creature is in combat and the easier they are to injure further. 
+### Hit Locations
+Every creature, and some objects has hit location, representing the key components of their physique. Strikes will hit one or more hit locations whereas areas will hit many if not all hit locations. A [d200](#D200%20Rolls) is used to determine which hit location is hit if it is random, otherwise common sense can determine hit location. 
+
+**Location Types.** There are 4 different types of hit location. Bulk is for the majority of a creature, typically containing most of their important organs. Crux is for the weak spot of a creature where they are most vulnerable. Arms are limbs a creature uses to manipulate objects and the world around them and legs are limbs used for movement (Yes technically wings are classified as legs). Limbs in the table should be ordered with Crux being the lowest, then arms, then legs and lastly bulk. 
+
+#### Hit Location Tables
+##### 4 Limbed
+
+| d200    | Hit Location | Type |
+| ------- | ------------ | ---- |
+| 1-20    | Head         | Crux |
+| 21-50   | Right Arm    | Arm  |
+| 51-80   | Left Arm     | Arm  |
+| 81-110  | Right Leg    | Leg  |
+| 111-140 | Left Leg     | Leg  |
+| 141-200 | Torso        | Bulk |
+##### 6 Limbed
+| d200    | Hit Location | Type       |
+| ------- | ------------ | ---------- |
+| 1-20    | Head         | Crux       |
+| 21-40   | Right Arm    | Arm        |
+| 41-60   | Left Arm     | Arm        |
+| 61-80   | Right Extra  | Arm or Leg |
+| 81-100  | Left Extra   | Arm or Leg |
+| 101-120 | Right Leg    | Leg        |
+| 121-140 | Left Leg     | Leg        |
+| 141-200 | Torso        | Bulk       |
+##### 8 Limbed
+| d200    | Hit Location  | Type       |
+| ------- | ------------- | ---------- |
+| 1-20    | Head          | Crux       |
+| 21-35   | Right Arm     | Arm        |
+| 36-50   | Left Arm      | Arm        |
+| 51-65   | Right Extra 1 | Arm or Leg |
+| 66-80   | Left Extra 1  | Arm or Leg |
+| 81-95   | Right Extra 2 | Arm or Leg |
+| 96-110  | Left Extra 2  | Arm or Leg |
+| 111-125 | Right Leg     | Leg        |
+| 126-140 | Left Leg      | Leg        |
+| 141-200 | Torso         | Bulk       |
+##### 10 Limbed
+| d200    | Hit Location  | Type       |
+| ------- | ------------- | ---------- |
+| 1-20    | Head          | Crux       |
+| 21-32   | Right Arm     | Arm        |
+| 33-44   | Left Arm      | Arm        |
+| 45-56   | Right Extra 1 | Arm or Leg |
+| 57-68   | Left Extra 1  | Arm or Leg |
+| 69-80   | Right Extra 2 | Arm or Leg |
+| 81-92   | Left Extra 2  | Arm or Leg |
+| 93-104  | Right Extra 3 | Arm or Leg |
+| 105-116 | Left Extra 3  | Arm or Leg |
+| 117-128 | Right Leg     | Leg        |
+| 129-140 | Left Leg      | Leg        |
+| 141-200 | Torso         | Bulk       |
+### Wounds
+#### Damage Thresholds
+Each hit location has an array of 3 damage thresholds. These vary for each hit location based on armour, ability to dodge, and ability to endure injury. 
+
+**Base Threshold.** This is the number all you damage thresholds are based off. First add to your DnD hit points you level times your armour class modifier (As if AC where an ability score like charisma). Then divide this total by 15 to get your base threshold. In this scenario, round upward to ensure your base threshold is never 0. 
+
+**Location Thresholds.** The table below shows each hit location type along with what its damage thresholds are. Each threshold's number is multiplied by your base threshold to obtain the actual damage threshold. 
+
+| Hit Location Type | Minor Threshold (MT) | Severe Threshold (ST) | Critical Threshold (CT) |
+| ----------------- | -------------------- | --------------------- | ----------------------- |
+| Crux              | 3                    | 6                     | 9                       |
+| Arm               | 4                    | 8                     | 12                      |
+| Leg               | 5                    | 10                    | 15                      |
+| Body              | 6                    | 12                    | 18                      |
+#### Wound Levels
+When a hit location takes damage, add this damage to its DP. If the DP for a hit location meets or exceed a threshold the wound level of that location increases. 
+
+**Negligible.** There is little to no injury to the hit location. Occurs if its DP is less than the MT.
+
+**Minor.** There is some injury to the hit location which will take time to heal, but this does not effect the injured creature substantially. Occurs if its DP is less than the ST and greater than or equal to the MT.
+
+**Severe.** There is severe injury to the hit location, impeding the affected creature. Occurs if the DP is less than the CT and greater than or equal to the MT. 
+- **Crux.** The creature gains the dazed condition.
+- **Arm.** The creature gains the disabled condition. It can gain this condition for multiple arms at the same time.
+- **Leg.** The creature gains the immobile condition. It can gain this condition for multiple legs at the same time. 
+- **Bulk.** The creature gains the agonised condition. 
+
+**Critical.** There is lethal injury to a hit location which will cause the creature to die if not healed. Occurs if the DP is greater than or equal to the CT. 
+- **Crux.** The creature gains the concussed condition.
+- **Arm.** The creature gains the maimed condition. It can gain this condition for multiple arms at the same time.
+- **Leg.** The creature gains the crippled condition. It can gain this condition for multiple legs at the same time. 
+- **Bulk.** The creature gains the bleeding condition.
+#### Wound Conditions
+##### Dazed
+The affected creature cannot concentrate. They can only take a bonus action or a move action or a main action. They cannot take reactions. 
+##### Disabled
+The arm cannot be used for abilities including spells involving somatic components and attacks. Any items it is holding are dropped. 
+##### Immobile
+The leg cannot be used for movement. If it is used for anything but walking that movement mode becomes impossible. If it is used for walking, the creature drops prone and cannot stand while it has this condition. 
+##### Agonised
+Each time the affected creature takes an action, bonus action, movement or reaction, they take damage equal to 1d10 + their level to this hit location. 
+##### Concussed
+The creature is dazed and dying.
+##### Maimed
+The creature is disabled and dying. 
+##### Crippled
+The creature is immobile and dying.
+##### Bleeding
+The creature is agonised and dying
+##### Dying
+The creature starts with a pool of 3d20. At the start of each of their turns, and each time they take damage, they must roll this pool and remove from it any d20 that rolls a 15 or higher. Once the pool is reduced to 0 they take a death action.
+
+**Accept.** You perform an action which critically succeeds, then die. 
+
+**Deny.** You fall unconscious until the wound's DP are reduced below its CT. The hit location is permanently injured in a way you should agree upon with your GM. 
+#### Temporary Hit Points
+Each time you gain temporary hit points they act as a global shield. Once your temp HP is reduced to 0 then the hit location takes the remainder of the damage. 
+## Resting
+### Overview
+EoS uses a completely different resting system to DnD. Rests are now defined by how long they last for, rather then split into short and long rests. A rest is any period of downtime where characters are not avoiding strenuous activity and are relatively comfortable. 
+### Healing
+Each hit location has a recovery value (RV) equal to half its MT. It loses DP equal to its RV on a varying length of time dependant on how injured the hit location is. 
+
+**Treating Wounds.** A wound will only heal if it has been treated. Negligible wounds are treated automatically, minor require a DR 1 REA or INT test, severe require a DR 3 REA or INT test and critical require a DR 5 REA or INT test. Casting spare the dying will reduce the DR of the test by 2. If a severe wound is treated the condition it causes is negated. If a critical wound is treated the dying condition caused by it is negated. If a treated hit location takes damage the wound becomes untreated and its conditions return as if freshly applied. 
+
+**Healing Time.** Negligible wounds take 1 hour per RV. Minor wounds take 1 day (24 hours) per RV. Severe wounds take 1 week (168 hours) per RV. Critical wounds take 1 month (672 hours) per RV. 
 # Class Changes
-You spend hope to use stronger abilities. Many will be worked out on a case by case basis, but here are a few examples.
+## Overview
+EoS Changes several things about base DnD. While it cant cover everything, it makes some broad stroke changes to classes. Changes to species, feats and subclasses will be done on a case-by-case basis. 
 ## Common
-### Spells
+#### Spellcasting
 You spend hope to gain spell slots detailed below, based on your spellcasting level (see multiclassing rules to determine level). 
 
 | Level | 1 Hope Spell Slot | 2 Hope Spell Slot | 4 Hope Spell Slot | 8 Hope Spell Slot |
@@ -246,10 +335,13 @@ You spend hope to gain spell slots detailed below, based on your spellcasting le
 | 15-16 | 3                 | 5                 | 8                 |                   |
 | 17-18 | 3                 | 5                 | 8                 | 9                 |
 | 19-20 | 4                 | 6                 | 8                 | 9                 |
-### Attacks
-You spend 1 hope to target an attack roll to a specific hit location of a creature. 
+#### Attacks
+You can expend levels of advantage to use special attacks in place of a regular attack action. Doing so can only reduce your level to DIS 2, at which point no more advantage can be spent. 
+##### Crux Strike (2 ADV)
+You chose to target the crux of the creature you attack. 
+##### Targeted Strike (1 ADV)
+You chose to target either the bulk, an arm or a leg of the creature you attack. 
 ## Class Specific
-`Note: nothing sublcass specific is here, that will be done on a case-by-case basis`
 ### Artificer
 **Tinker's Magic.** 1 Hope per use.
 
@@ -281,7 +373,11 @@ You spend 1 hope to target an attack roll to a specific hit location of a creatu
 
 **Greater Divine Intervention.** 8 Hope. Has a cumulative 50% chance of failing after each use which resets on a long rest. Failed uses still consume Hope. 
 ### Druid
-**Wild Shape.** See table.
+**Wild Shape.** 
+- **Hit Locations.** Your hit locations are replaced with those of the creature you wildshape into. Each of them starts with 0 DP and has the damage thresholds of that creature's hit location. 
+- **Sustained Injury.** If while in wild shape a hit location gains a wound level, when exiting wild shape a hit location of the same type takes DP equal to the damage threshold of the wound level below that. For example, a critical wound in wild shape becomes a severe wound's worth of damage outside. This damage cannot be reduced in any way. 
+- **Exiting Wild Shape.** If you take a critical wound while in wild shape, you exit wild shape. The other exiting rules still apply. 
+- **Hope Cost.** See table
 
 | Level | 1 Hope         | 2 Hope | 4 Hope |
 | ----- | -------------- | ------ | ------ |
@@ -334,8 +430,3 @@ You spend 1 hope to target an attack roll to a specific hit location of a creatu
 **Eldritch Master.** You contact your patron who gifts you back all Pact Magic slots. This feature has a cumulative 50% chance of failing after each use which resets on a medium rest. 
 ### Wizard
 **Arcane Recovery.** When you finish a short rest you gain a spell slot equal to that obtained by spending 1 Hope. 
-
-
-
-
-
