@@ -148,6 +148,7 @@ The RR of the test is compared against the difficulty rank (DR) set by the GM. U
 | 8     | S+R | S+R   | S+R   | S+R   | S+R   | S+R   | S     | S+C   | F + R | F     |
 | 9     | S+R | S+R   | S+R   | S+R   | S+R   | S+R   | S+R   | S     | S+C   | F + R |
 | 10    | S+R | S+R   | S+R   | S+R   | S+R   | S+R   | S+R   | S+R   | S     | S+C   |
+
 **Key:**
 - **Success (S).** The creature succeeds at what they're trying to do.
 - **Failure (F).** The creature cannot do what they were trying to do. 
